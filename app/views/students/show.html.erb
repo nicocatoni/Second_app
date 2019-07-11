@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div class="card border-success mb-3" style="max-width: 20rem;">
+  <div class="card-header"><%= "Estudiante##{@student.id}"%></div>
+  <div class="card-body">
+    <h4 class="card-title"><%= @student.name %></h4>
+    <p class="card-text"><%= "Email: #{@student.email}"%></p>
+    <p class="card-text"><%= "Edad: #{@student.age}"%></p>
+  </div>
+</div>
+
+<%= link_to '<<Back', students_path, class: 'btn btn-primary' %>
+<%= link_to 'Edit', edit_student_path(@student), class: 'btn btn-warning' %>
